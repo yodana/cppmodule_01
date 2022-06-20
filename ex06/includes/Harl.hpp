@@ -6,7 +6,7 @@
 /*   By: yodana <yodana@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 18:58:00 by yodana            #+#    #+#             */
-/*   Updated: 2022/06/19 18:58:28 by yodana           ###   ########.fr       */
+/*   Updated: 2022/06/20 08:32:34 by yodana           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ class Harl{
         Harl(void);
         ~Harl(void);
         void complain(std::string level);
-        void getWarning();
         typedef void (Harl::* funcPtr)();
         funcPtr  array[4];
 
