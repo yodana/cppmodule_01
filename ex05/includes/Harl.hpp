@@ -13,4 +13,22 @@
 #ifndef HARL_H
 # define HARL_H
 
+#include <iostream>
+
+class Harl{
+    public:
+        Harl(void);
+        ~Harl(void);
+        void complain(std::string level);
+        void getWarning();
+        typedef void (Harl::* funcPtr)();
+        funcPtr  array[4];
+
+    private:
+        void warning( void );
+        void debug( void );
+        void info( void );
+        void error( void );
+};
+
 #endif

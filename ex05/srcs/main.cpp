@@ -10,6 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../includes/Harl.hpp"
+#include <iostream>
+
+void modulo(void){
+    std::cout << "this work " << std::endl;
+    return ;
+}
+
+
+
 int main(){
+    Harl instance;
+    instance.complain("warning");
+    instance.complain("debug");
+    instance.complain("info");
+    instance.complain("error");
+    instance.complain("dontexist");
     return 0;
 }
